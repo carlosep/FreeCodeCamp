@@ -4,6 +4,8 @@ body{
   background-position: right top;
   background-attachment: fixed;
   background-size: cover;
+  color:white;
+  font-size: 14pt;
 }
 
 /* navbar */
@@ -16,7 +18,7 @@ body{
 
 /* title */
 .navbar-default .navbar-brand {
-  color: #FFF;
+  color: white;
   font-size: 35pt;
   font-family: Dosis;
 }
@@ -28,7 +30,7 @@ body{
 
 /* link */
 .navbar-default .navbar-nav > li > a {
-  color: #FFF;
+  color: white;
   font-size: 20pt;
   padding: 20px;
 }
@@ -67,39 +69,28 @@ body{
     }
 }
 
-.footer{
-  background-color: #282E70;
-  color: white;
-}
+.footer{background-color: #282E70;}
 
-.container{
-  margin-top: 60px;
-}
+.container{margin-top: 60px;}
 
-.container-fluid{
-  padding:0px;
-}
+.container-fluid{padding:0px;}
 
 .title{
   background-color: green;
   height: 120px;
   width: 100%;
-  color: white;
   font-size: 60pt;
   letter-spacing: 10px;
 }
 
 .about{
   background-color: rgba(0, 0, 51, .9);
-  color: white;
   font-size: 14pt;
   padding-top: 25px;
   padding-bottom: 30px;
 }
 
-.about img{
-  border-radius: 20%;
-}
+.about img{border-radius: 20%;}
 .portfolio{
   background-color: rgba(0, 0, 51, .9);
   margin-top: 0px;
@@ -108,7 +99,6 @@ body{
 .portfolio-box{
   background-color: rgba(255,255,255,.4);
   border: 1px solid black;
-
   margin-bottom: 30px;
 }
 
@@ -119,5 +109,19 @@ body{
   left: 0px;
   right: 0px;
   font-size: 14pt;
-  color: white;
+
+}
+.social-media ul{
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.social-media ul a{color: white;}
+
+.social-media ul li{margin-top: 10px;}
+.social-media ul a img{border-radius: 50%;}
+
+.profile-pic{
+  vertical-align: middle;
+
 }
