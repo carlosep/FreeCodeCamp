@@ -65,11 +65,12 @@ function summonQuote(first) {
     });
     $(".quote").fadeIn('slow');
   }
-
+  return quotes[n][0] + " - " + quotes[n][1];
 }
 $(document).ready(function() {
-  summonQuote(true);
+  var quote = summonQuote(true);
   $("#nextQuote").on("click", function() {
-    summonQuote(false);
+    quote = summonQuote(false);
   });
+  $("#twitterButton").attr("href", 'https://twitter.com/intent/tweet?text=' + quote + '#quotes');
 });

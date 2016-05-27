@@ -1,13 +1,18 @@
-html, body, .container-table {
+html,
+body,
+.container-table {
   height: 98%;
 }
+
 .container-table {
   display: table;
 }
+
 .vertical-center-row {
   display: table-cell;
   vertical-align: middle;
 }
+
 .bottom-row {
   display: table-cell;
   align: "left";
@@ -21,6 +26,6 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-.twitter-icon{
+.twitter-icon {
   max-height: 20px;
 }
