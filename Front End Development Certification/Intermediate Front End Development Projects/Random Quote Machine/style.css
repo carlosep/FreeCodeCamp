@@ -1,0 +1,26 @@
+html, body, .container-table {
+  height: 98%;
+}
+.container-table {
+  display: table;
+}
+.vertical-center-row {
+  display: table-cell;
+  vertical-align: middle;
+}
+.bottom-row {
+  display: table-cell;
+  align: "left";
+  vertical-align: bottom;
+  padding-bottom: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.twitter-icon{
+  max-height: 20px;
+}
