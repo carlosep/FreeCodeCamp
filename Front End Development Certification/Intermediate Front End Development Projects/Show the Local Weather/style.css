@@ -1,5 +1,9 @@
 body{
-  background-color: grey;
+  background-image: url("http://images.unsplash.com/photo-1454702762838-a6df8cc3517f");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .title h1{
   background-color: black;
@@ -11,7 +15,7 @@ body{
 }
 
 .white-bg{
-  background-color: white;
+  background-color: rgba(255,255,255,0.8);
   border: 2px solid #AAA;
   border-radius: 10px 10px 0px 0px;
   margin-bottom: 40px;
