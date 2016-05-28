@@ -8,7 +8,10 @@ $(function() {
     loadWeather(0, 0);
   }
 
-  var $weather = $('#weather')
+  var $cityCountry = $('#cityCountry');
+  var $weather = $('#weather');
+  var $temperature = $('#temperature');
+  var $icon = $('#icon');
 
   function loadWeather(lat, lon) {
     $.ajax({
@@ -20,7 +23,10 @@ $(function() {
         units: 'metric'
       },
       success: function(data) {
-        $weather.append('My weather: ' + data.weather[0].main + '<br>City: ' + data.name);
+        $cityCountry.append('Your City<br> ' + data.name + ", " + data.sys.country);
+        $temperature.append('Temperature<br> ' + data.main.temp + "<span id='celsius'> °C</span>");
+        $weather.append('Your Weather<br> ' + data.weather[0].main + ': ' + data.weather[0].description);
+        $icon.append("<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' alt='weather icon'>");
       }
     });
   }
