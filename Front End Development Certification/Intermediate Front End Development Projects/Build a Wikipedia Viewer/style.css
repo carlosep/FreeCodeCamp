@@ -1,0 +1,11 @@
+#randomButton{
+  margin-bottom: 20px;
+}
+
+#searchButton{
+  border-radius: 5px;
+}
+
+#searchBar{
+  display:none;
+}
