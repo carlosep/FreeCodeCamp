@@ -1,21 +1,32 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2 text-center">
-      <h1>Let me Wikipedia it for you, you lazy fuck.</h1>
+      <h1>Let me Wikipedia it for you.</h1>
       <h2>Choose what do you want to do:</h2>
     </div>
-  </div>
+  </div> <!-- HEADER -->
   <div class="row">
     <div class="col-sm-6 text-center " id="randomButton">
       <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-danger btn-block">I want to read about some random interesting stuff.</a>
     </div>
     <div class="col-sm-6 text-center" id="search">
       <div class="input-group">
-        <input type="text" id="searchBar" class="form-control pull-right" placeholder="Such as..."  >
+        <input type="text" id="searchBar" class="form-control pull-right" placeholder="Such as...">
         <span class="input-group-btn">
           <a href="#" class="btn btn-danger btn-block" id="searchButton">I want ro read about something specific.</a>
         </span>
       </div>
     </div>
-  </div>
+  </div><!-- BUTTONS -->
+  <div class="row">
+    <div id="results">
+      <a href="https://en.wikipedia.org/wiki/Apple">
+        <div class="col-lg-12">
+          <h1>Apple</h1>
+          <p>The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple.</p>
+        </div>
+      </a>
+    </div>
+  </div><!-- RESULTS -->
 </div>
+<div id="wikiInfo">&nbsp;</div>

@@ -1,4 +1,6 @@
-var firstClick = true;
+
+$(function() {
+  var firstClick = true;
 $("#searchButton").click(function(){
   if(firstClick){
     var button = $("#searchButton");
@@ -9,6 +11,28 @@ $("#searchButton").click(function(){
     $("#searchBar").show();
     firstClick = false;
   }else{
-    console.log("GET EXPRESSION ON SEARCHBAR AND SEND TO API REQUEST")
+    console.log(getResults('test'))
+  }
+});
+
+
+
+  var $results = $('#results');
+  function getResults(exp) {
+    $.ajax({
+      url: 'https://www.wikipedia.org/w/api.php?action=opensearch&format=json&callback=?',
+      type: 'GET',
+      contentType: 'application/json; charset=utf-8',
+      async: false,
+      dataType: 'json',
+      data: {
+        search: exp,
+      },
+      success: function(data) {
+        $.each(data, function(key, value){
+          $results.append("AQUELE LAYOUT QUE VC TA LIGADO")
+        });
+      }
+    });
   }
 });
