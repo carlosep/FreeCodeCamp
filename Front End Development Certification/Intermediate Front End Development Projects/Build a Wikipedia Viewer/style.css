@@ -1,11 +1,24 @@
-#randomButton{
-  margin-bottom: 20px;
+html,body {height: 100%;}
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
-#searchButton{
-  border-radius: 5px;
+.container {
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, .8);
 }
 
-#searchBar{
-  display:none;
+h1 span {
+  font-family: 'EB Garamond', serif;
+  font-size: 40pt;
 }
+
+.header {margin-bottom: 40px;}
+#randomButton {margin-bottom: 20px;}
+#searchButton {border-radius: 5px;}
+#searchBar {display: none;}
+footer {margin-top: 50px;}
