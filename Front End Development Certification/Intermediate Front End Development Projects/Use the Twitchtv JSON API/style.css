@@ -1,19 +1,36 @@
-.container{
+.container {
   background-color: #DDD;
-  border-left:2px solid #BBB;
-  border-right:2px solid #BBB;
+  border-left: 2px solid #BBB;
+  border-right: 2px solid #BBB;
 }
 
-.navs{
-  margin-bottom: 10px;
+.title {
+  background-color: #FFF;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Passion One', cursive;
+  color: #38245b;
 }
+
+.title img {
+  max-width: 300px;
+  margin: auto;
+}
+
+.navs {margin-bottom: 10px;}
 /* tab color */
 .nav-tabs>li>a {
   background-color: #DDD;
   border-bottom: 1px solid #303136 !important;
 }
 /* active tab color */
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
   background-color: #DDD;
   border: 1px solid #303136 !important;
   border-bottom: 0 !important;
@@ -25,28 +42,27 @@
   color: #fff;
 }
 
-.streamer{
+.streamer {
   border-bottom: 2px solid #BBB;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.streamer img{
-  max-width:90px;
+.streamer img {
+  max-width: 90px;
   border-radius: 50%;
 }
 
-.vertical-center{
+.vertical-center {
   display: flex;
   align-items: center;
 }
 
-.online span.glyphicon{
-  color: #54FF68;
-}
-.offline span.glyphicon{
-  color: #FF5468;
-}
-.unprocessable span.glyphicon{
-  color: #FFFF66;
+.online span.glyphicon {color: #54FF68;}
+.offline span.glyphicon {color: #FF5468;}
+.unprocessable span.glyphicon {color: #FFFF66;}
+
+footer {
+  background-color: #BBB;
+  color: white;
 }
