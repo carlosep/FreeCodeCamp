@@ -1,3 +1,52 @@
-.streamer a, .streamer span{
-  /*block table, nao sei oq lá vertical align*/
+.container{
+  background-color: #DDD;
+  border-left:2px solid #BBB;
+  border-right:2px solid #BBB;
+}
+
+.navs{
+  margin-bottom: 10px;
+}
+/* tab color */
+.nav-tabs>li>a {
+  background-color: #DDD;
+  border-bottom: 1px solid #303136 !important;
+}
+/* active tab color */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  background-color: #DDD;
+  border: 1px solid #303136 !important;
+  border-bottom: 0 !important;
+}
+/* hover tab color */
+.nav-tabs>li>a:hover {
+  border-color: #0000;
+  background-color: #303136;
+  color: #fff;
+}
+
+.streamer{
+  border-bottom: 2px solid #BBB;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.streamer img{
+  max-width:90px;
+  border-radius: 50%;
+}
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+}
+
+.online span.glyphicon{
+  color: #54FF68;
+}
+.offline span.glyphicon{
+  color: #FF5468;
+}
+.unprocessable span.glyphicon{
+  color: #FFFF66;
 }
