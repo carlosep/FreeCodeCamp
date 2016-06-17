@@ -29,10 +29,11 @@ $(function() {
           exp = (exp * parseFloat(currExpression)) / 100;
           break;
       }
+      sign = '';
     } else {
       exp = parseFloat(currExpression);
     }
-    currExpression = '';
+
     $('#screen').get(0).value = exp;
     switch ($(this).val()) {
       case 'eq':
@@ -48,12 +49,15 @@ $(function() {
         break;
       case 'ac':
         exp = 0.0;
-        cExp = 0.0;
+        currExpression = 0.0;
         $('#screen').get(0).value = '';
         break;
-      case 'ce':
-        cExp = 0.0;
-        break;
     }
+    currExpression = '';
+  });
+  $('#CE').click(function() {
+    sign = '';
+    currExpression = exp;
+    $('#screen').get(0).value = exp;
   });
 });
