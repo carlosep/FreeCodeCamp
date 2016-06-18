@@ -3,11 +3,11 @@ $(function() {
   var sign = '';
   var expression = '';
   var currExpression = '';
+  var result;
   $('.number').click(function() {
     if (currExpression.length < 18) {
       currExpression += $(this).val();
       $('#screen').get(0).value = currExpression;
-      console.log(currExpression);
     }
   });
   $('.sign').click(function() {
@@ -28,6 +28,9 @@ $(function() {
         case '%':
           exp = (exp * parseFloat(currExpression)) / 100;
           break;
+        case 'eq':
+          $('#screen').get(0).value = exp;
+          break;
       }
       sign = '';
     } else {
@@ -37,15 +40,12 @@ $(function() {
     $('#screen').get(0).value = exp;
     switch ($(this).val()) {
       case 'eq':
-        currExpression = exp;
-        break;
       case '+':
       case '-':
       case 'x':
       case '/':
       case '%':
         sign = $(this).val();
-        console.log(sign);
         break;
       case 'ac':
         exp = 0.0;
@@ -54,10 +54,22 @@ $(function() {
         break;
     }
     currExpression = '';
+    if ($('#screen').get(0).value == 'NaN') {
+      $('#screen').get(0).value = 'Error (AC)';
+      exp = 0.0;
+      currExpression = 0.0;
+    }
   });
   $('#CE').click(function() {
     sign = '';
     currExpression = exp;
     $('#screen').get(0).value = exp;
+  });
+  $('button').click(function() {
+    if ($(this).val() != 'eq' && sign == 'eq') {
+      exp = 0.0;
+      currExpression = $(this).val();
+      sign = '';
+    }
   });
 });
