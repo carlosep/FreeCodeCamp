@@ -1,0 +1,68 @@
+body {
+  background-image: url(http://res.cloudinary.com/carlosep/image/upload/v1466259249/FreeCodeCamp/texture-tablecloth.png);
+}
+
+.title{
+  background-image: url(http://www.uibrush.com/wp-content/uploads/2014/12/Free-Chalkboard-Textures.jpg);
+  margin-bottom: 20px;
+}
+
+.title h1{
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  font-size: 45pt;
+}
+
+.title span h1{
+  font-size: 35pt;
+  margin-bottom: -15px;
+}
+
+.timer{
+  background-color: white;
+  margin: 0px 70px;
+  padding: 15px 0px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+button:active{
+  font-size: 18px;
+}
+
+.session{
+  height: 316px;
+  width: 310px;
+  position: relative;
+}
+
+.session img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.session p, .session span{
+  z-index: 100;
+  position: absolute;
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+  left: 65px;
+  top: 80px;
+}
+
+.session span{
+  left: 130px;
+  top: 150px;
+}
+
+.footer{
+  margin-top: 50px;
+}
