@@ -11,21 +11,28 @@
     <div class="col-sm-6 text-center">
       <div class="timer">
         <p>Break Lenght:</p>
-        <button>-</button><span> 5 </span><button>+</button>
+        <button id="break-m">-</button><span id="break-length"> 5 </span><button id="break-p">+</button>
       </div>
     </div>
     <div class="col-sm-6 text-center">
       <div class="timer">
         <p>Session Lenght:</p>
-        <button>-</button><span> 25 </span><button>+</button>
+        <button id="session-m">-</button><span id="session-length"> 25 </span><button id="session-p">+</button>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3 text-center session">
-      <img src="http://res.cloudinary.com/carlosep/image/upload/v1466271100/FreeCodeCamp/graphic-plate.png" alt="" />
-      <p>Session</p>
-      <span>25</span>
+    <div class="col-xs-12 text-center session">
+      <div id="plate" class="">
+        <p id="plate-title">Session</p>
+        <p id="plate-timer">25</p>
+        <small><p id="plate-seconds">00</p></small>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <button id="stop" class="btn btn-success">STOP</button>
     </div>
   </div>
 </div>
